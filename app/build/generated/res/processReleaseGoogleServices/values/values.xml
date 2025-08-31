@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">858969222964-ihd6k7leknk971bae5sv5oln5opoaakm.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">858969222964</string>
+    <string name="google_api_key" translatable="false">AIzaSyApcpxF12a5MGfo-vqbKPWVQzdmhJzGbH0</string>
+    <string name="google_app_id" translatable="false">1:858969222964:android:232161b808e6269a9d3f61</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyApcpxF12a5MGfo-vqbKPWVQzdmhJzGbH0</string>
+    <string name="google_storage_bucket" translatable="false">smart-school-2023.appspot.com</string>
+    <string name="project_id" translatable="false">smart-school-2023</string>
+</resources>

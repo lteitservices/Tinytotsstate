@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lteitservices.tinytotsstate">
+
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_FILE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <application
+        android:name="com.lteitservices.tinytotsstate.utils.MyApp"
+        android:allowBackup="false"
+        android:configChanges="orientation|screenSize"
+        android:exported="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.CbseExaminationActivity"
+            android:exported="false" />
+        `<activity
+            android:name="com.lteitservices.tinytotsstate.students.CbseTimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOfflinePayment"
+            android:exported="false" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.BehaviourComment"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentVideoTutorialPlay"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentHomeworkNew"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.NewDashboard"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentCoursePerformance"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentUploadDocument"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentDailyAssignment"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentProcessingFees"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentCourseDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineCourse"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentStartLessonActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|uiMode"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentLiveClasses"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOfflinePaymentList"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentGmeetLiveClasses"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentBehaviourReport"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.NotificationList"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineExamQuestionsNew"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineExamResult"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineExam"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.AboutSchool"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentTimeline"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentAddTimeLine"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentEditTimeLine"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentDocuments"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lteitservices.tinytotsstate.Login"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentProfileDetailsNew"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentAddAssignment"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentEditAssignment"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentUploadHomework"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentFees"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentNoticeBoard"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentExaminationList"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentReportCard_ExamListResult"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentSubjectList"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentTeachersList"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentTransportRoutes"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentDownloads"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentAttendance"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentReportCard_ExamList"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentExamSchedule_ExamList"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentExamSchedule"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentVisitorBook"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentHostel"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentLibraryBook"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentClassTimetable"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabusTimetable"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabusStatus"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentLibraryBookIssued"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentAppyLeave"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentAddLeave"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentEditLeave"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabus"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineQuizResult"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabuslesson"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineCourseQuiz"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.TakeUrl"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.OpenPdf"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentTasks"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.StudentTasksEdit"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.Payment"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.CoursePayment"
+            android:exported="true" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.CourseVideoPlay"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.lteitservices.tinytotsstate.students.LiveClasses"
+            android:exported="false" />
+
+        <service
+            android:name="com.lteitservices.tinytotsstate.utils.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

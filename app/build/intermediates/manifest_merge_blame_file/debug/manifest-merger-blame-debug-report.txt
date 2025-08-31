@@ -1,0 +1,821 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.lteitservices.tinytotsstate"
+4    android:versionCode="1"
+5    android:versionName="4.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+11-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:6:5-73
+11-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:6:22-70
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:7:5-81
+12-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission
+13-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:8:5-10:36
+14        android:name="android.permission.CALL_PHONE"
+14-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:9:9-53
+15        android:required="false" />
+15-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:10:9-33
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:11:5-80
+16-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:11:22-77
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:12:5-67
+17-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:12:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:13:5-79
+18-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.READ_CALENDAR" />
+19-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:14:5-72
+19-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:14:22-69
+20    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+20-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:15:5-76
+20-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:15:22-73
+21    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+21-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:16:5-75
+21-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:16:22-72
+22    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+22-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:17:5-75
+22-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:17:22-72
+23    <uses-permission android:name="android.permission.READ_MEDIA_FILE" />
+23-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:18:5-74
+23-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:18:22-71
+24    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+24-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:19:5-76
+24-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:19:22-74
+25    <uses-permission
+25-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:20:5-22:36
+26        android:name="android.permission.CAMERA"
+26-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:21:9-49
+27        android:required="false" />
+27-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:22:9-33
+28    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+28-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:23:5-75
+28-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:23:22-72
+29    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+29-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:24:5-76
+29-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:24:22-74
+30
+31    <uses-feature
+31-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:25:5-27:36
+32        android:name="android.hardware.telephony"
+32-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:26:9-50
+33        android:required="false" />
+33-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:27:9-33
+34    <uses-feature
+34-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:28:5-30:36
+35        android:name="android.hardware.camera.autofocus"
+35-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:29:9-57
+36        android:required="false" />
+36-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:30:9-33
+37    <uses-feature
+37-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:31:5-33:34
+38        android:name="android.hardware.camera"
+38-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:32:9-47
+39        android:required="true" />
+39-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:33:9-32
+40
+41    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+41-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:24:5-68
+41-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:24:22-65
+42    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+42-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:26:5-82
+42-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:26:22-79
+43
+44    <permission
+44-->[androidx.core:core:1.13.0] C:\Users\HP\.gradle\caches\transforms-3\ff9e9ac6302c13460ad766846437d12d\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+45        android:name="com.lteitservices.tinytotsstate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+45-->[androidx.core:core:1.13.0] C:\Users\HP\.gradle\caches\transforms-3\ff9e9ac6302c13460ad766846437d12d\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+46        android:protectionLevel="signature" />
+46-->[androidx.core:core:1.13.0] C:\Users\HP\.gradle\caches\transforms-3\ff9e9ac6302c13460ad766846437d12d\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+47
+48    <uses-permission android:name="com.lteitservices.tinytotsstate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+48-->[androidx.core:core:1.13.0] C:\Users\HP\.gradle\caches\transforms-3\ff9e9ac6302c13460ad766846437d12d\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+48-->[androidx.core:core:1.13.0] C:\Users\HP\.gradle\caches\transforms-3\ff9e9ac6302c13460ad766846437d12d\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+49
+50    <application
+50-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:35:5-289:19
+51        android:name="com.lteitservices.tinytotsstate.utils.MyApp"
+51-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:36:9-67
+52        android:allowBackup="false"
+52-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:37:9-36
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.13.0] C:\Users\HP\.gradle\caches\transforms-3\ff9e9ac6302c13460ad766846437d12d\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+54        android:configChanges="orientation|screenSize"
+54-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:38:9-55
+55        android:debuggable="true"
+56        android:exported="true"
+56-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:39:9-32
+57        android:extractNativeLibs="false"
+58        android:hardwareAccelerated="true"
+58-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:40:9-43
+59        android:icon="@drawable/app_icon"
+59-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:41:9-42
+60        android:label="@string/app_name"
+60-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:42:9-41
+61        android:networkSecurityConfig="@xml/network_security_config"
+61-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:48:9-69
+62        android:requestLegacyExternalStorage="true"
+62-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:43:9-52
+63        android:roundIcon="@drawable/app_icon"
+63-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:44:9-47
+64        android:supportsRtl="true"
+64-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:45:9-35
+65        android:testOnly="true"
+66        android:theme="@style/AppTheme"
+66-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:46:9-40
+67        android:usesCleartextTraffic="true" >
+67-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:47:9-44
+68        <activity
+68-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:50:9-52:40
+69            android:name="com.lteitservices.tinytotsstate.students.CbseExaminationActivity"
+69-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:51:13-92
+70            android:exported="false" />
+70-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:52:13-37
+71        `
+72        <activity
+72-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:53:10-55:40
+73            android:name="com.lteitservices.tinytotsstate.students.CbseTimeTableActivity"
+73-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:54:13-90
+74            android:exported="false" />
+74-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:55:13-37
+75        <activity
+75-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:56:9-58:40
+76            android:name="com.lteitservices.tinytotsstate.students.StudentOfflinePayment"
+76-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:57:13-90
+77            android:exported="false" />
+77-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:58:13-37
+78        <activity
+78-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:59:9-61:39
+79            android:name="com.lteitservices.tinytotsstate.students.BehaviourComment"
+79-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:60:13-85
+80            android:exported="true" />
+80-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:61:13-36
+81        <activity
+81-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:62:9-64:39
+82            android:name="com.lteitservices.tinytotsstate.students.StudentVideoTutorialPlay"
+82-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:63:13-93
+83            android:exported="true" />
+83-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:64:13-36
+84        <activity
+84-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:65:9-67:39
+85            android:name="com.lteitservices.tinytotsstate.students.StudentHomeworkNew"
+85-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:66:13-87
+86            android:exported="true" />
+86-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:67:13-36
+87        <activity
+87-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:68:9-70:39
+88            android:name="com.lteitservices.tinytotsstate.students.NewDashboard"
+88-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:69:13-81
+89            android:exported="true" />
+89-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:70:13-36
+90        <activity
+90-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:71:9-73:39
+91            android:name="com.lteitservices.tinytotsstate.students.StudentCoursePerformance"
+91-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:72:13-93
+92            android:exported="true" />
+92-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:73:13-36
+93        <activity
+93-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:74:9-76:39
+94            android:name="com.lteitservices.tinytotsstate.students.StudentUploadDocument"
+94-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:75:13-90
+95            android:exported="true" />
+95-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:76:13-36
+96        <activity
+96-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:77:9-79:39
+97            android:name="com.lteitservices.tinytotsstate.students.StudentDailyAssignment"
+97-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:78:13-91
+98            android:exported="true" />
+98-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:79:13-36
+99        <activity
+99-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:80:9-82:39
+100            android:name="com.lteitservices.tinytotsstate.students.StudentProcessingFees"
+100-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:81:13-90
+101            android:exported="true" />
+101-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:82:13-36
+102        <activity
+102-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:83:9-86:39
+103            android:name="com.lteitservices.tinytotsstate.students.StudentCourseDetail"
+103-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:84:13-88
+104            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+104-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:85:13-90
+105            android:exported="true" />
+105-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:86:13-36
+106        <activity
+106-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:87:9-89:39
+107            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineCourse"
+107-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:88:13-88
+108            android:exported="true" />
+108-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:89:13-36
+109        <activity
+109-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:90:9-93:39
+110            android:name="com.lteitservices.tinytotsstate.students.StudentStartLessonActivity"
+110-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:91:13-95
+111            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|uiMode"
+111-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:92:13-97
+112            android:exported="true" />
+112-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:93:13-36
+113        <activity
+113-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:94:9-96:39
+114            android:name="com.lteitservices.tinytotsstate.students.StudentLiveClasses"
+114-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:95:13-87
+115            android:exported="true" />
+115-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:96:13-36
+116        <activity
+116-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:97:9-99:39
+117            android:name="com.lteitservices.tinytotsstate.students.StudentOfflinePaymentList"
+117-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:98:13-94
+118            android:exported="true" />
+118-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:99:13-36
+119        <activity
+119-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:100:9-102:39
+120            android:name="com.lteitservices.tinytotsstate.students.StudentGmeetLiveClasses"
+120-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:101:13-92
+121            android:exported="true" />
+121-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:102:13-36
+122        <activity
+122-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:103:9-105:39
+123            android:name="com.lteitservices.tinytotsstate.students.StudentBehaviourReport"
+123-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:104:13-91
+124            android:exported="true" />
+124-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:105:13-36
+125        <activity
+125-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:106:9-108:39
+126            android:name="com.lteitservices.tinytotsstate.students.NotificationList"
+126-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:107:13-85
+127            android:exported="true" />
+127-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:108:13-36
+128        <activity
+128-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:109:9-112:39
+129            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineExamQuestionsNew"
+129-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:110:13-98
+130            android:configChanges="orientation|screenSize"
+130-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:111:13-59
+131            android:exported="true" />
+131-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:112:13-36
+132        <activity
+132-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:113:9-115:39
+133            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineExamResult"
+133-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:114:13-92
+134            android:exported="true" />
+134-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:115:13-36
+135        <activity
+135-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:116:9-118:39
+136            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineExam"
+136-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:117:13-86
+137            android:exported="true" />
+137-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:118:13-36
+138        <activity
+138-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:119:9-121:39
+139            android:name="com.lteitservices.tinytotsstate.AboutSchool"
+139-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:120:13-71
+140            android:exported="true" />
+140-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:121:13-36
+141        <activity
+141-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:122:9-124:39
+142            android:name="com.lteitservices.tinytotsstate.students.StudentTimeline"
+142-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:123:13-84
+143            android:exported="true" />
+143-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:124:13-36
+144        <activity
+144-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:125:9-127:39
+145            android:name="com.lteitservices.tinytotsstate.students.StudentAddTimeLine"
+145-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:126:13-87
+146            android:exported="true" />
+146-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:127:13-36
+147        <activity
+147-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:128:9-130:39
+148            android:name="com.lteitservices.tinytotsstate.students.StudentEditTimeLine"
+148-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:129:13-88
+149            android:exported="true" />
+149-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:130:13-36
+150        <activity
+150-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:131:9-133:39
+151            android:name="com.lteitservices.tinytotsstate.students.StudentDocuments"
+151-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:132:13-85
+152            android:exported="true" />
+152-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:133:13-36
+153        <activity
+153-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:134:9-141:20
+154            android:name="com.lteitservices.tinytotsstate.SplashActivity"
+154-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:135:13-74
+155            android:exported="true" >
+155-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:136:13-36
+156            <intent-filter>
+156-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:137:13-140:29
+157                <action android:name="android.intent.action.MAIN" />
+157-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:138:17-69
+157-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:138:25-66
+158
+159                <category android:name="android.intent.category.LAUNCHER" />
+159-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:139:17-77
+159-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:139:27-74
+160            </intent-filter>
+161        </activity>
+162        <activity
+162-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:142:9-144:39
+163            android:name="com.lteitservices.tinytotsstate.Login"
+163-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:143:13-65
+164            android:exported="true" />
+164-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:144:13-36
+165        <activity
+165-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:145:9-147:39
+166            android:name="com.lteitservices.tinytotsstate.students.StudentProfileDetailsNew"
+166-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:146:13-93
+167            android:exported="true" />
+167-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:147:13-36
+168        <activity
+168-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:148:9-150:39
+169            android:name="com.lteitservices.tinytotsstate.students.StudentAddAssignment"
+169-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:149:13-89
+170            android:exported="true" />
+170-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:150:13-36
+171        <activity
+171-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:151:9-153:39
+172            android:name="com.lteitservices.tinytotsstate.students.StudentEditAssignment"
+172-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:152:13-90
+173            android:exported="true" />
+173-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:153:13-36
+174        <activity
+174-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:154:9-156:39
+175            android:name="com.lteitservices.tinytotsstate.students.StudentUploadHomework"
+175-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:155:13-90
+176            android:exported="true" />
+176-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:156:13-36
+177        <activity
+177-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:157:9-159:39
+178            android:name="com.lteitservices.tinytotsstate.ForgotPassword"
+178-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:158:13-74
+179            android:exported="true" />
+179-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:159:13-36
+180        <activity
+180-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:160:9-162:39
+181            android:name="com.lteitservices.tinytotsstate.BaseActivity"
+181-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:161:13-72
+182            android:exported="true" />
+182-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:162:13-36
+183        <activity
+183-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:163:9-165:39
+184            android:name="com.lteitservices.tinytotsstate.students.StudentFees"
+184-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:164:13-80
+185            android:exported="true" />
+185-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:165:13-36
+186        <activity
+186-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:166:9-168:39
+187            android:name="com.lteitservices.tinytotsstate.students.StudentNoticeBoard"
+187-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:167:13-87
+188            android:exported="true" />
+188-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:168:13-36
+189        <activity
+189-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:169:9-171:39
+190            android:name="com.lteitservices.tinytotsstate.students.StudentExaminationList"
+190-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:170:13-91
+191            android:exported="true" />
+191-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:171:13-36
+192        <activity
+192-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:172:9-174:39
+193            android:name="com.lteitservices.tinytotsstate.students.StudentReportCard_ExamListResult"
+193-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:173:13-101
+194            android:exported="true" />
+194-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:174:13-36
+195        <activity
+195-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:175:9-177:39
+196            android:name="com.lteitservices.tinytotsstate.students.StudentSubjectList"
+196-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:176:13-87
+197            android:exported="true" />
+197-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:177:13-36
+198        <activity
+198-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:178:9-180:39
+199            android:name="com.lteitservices.tinytotsstate.students.StudentTeachersList"
+199-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:179:13-88
+200            android:exported="true" />
+200-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:180:13-36
+201        <activity
+201-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:181:9-183:39
+202            android:name="com.lteitservices.tinytotsstate.students.StudentTransportRoutes"
+202-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:182:13-91
+203            android:exported="true" />
+203-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:183:13-36
+204        <activity
+204-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:184:9-186:39
+205            android:name="com.lteitservices.tinytotsstate.students.StudentDownloads"
+205-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:185:13-85
+206            android:exported="true" />
+206-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:186:13-36
+207        <activity
+207-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:187:9-189:39
+208            android:name="com.lteitservices.tinytotsstate.students.StudentAttendance"
+208-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:188:13-86
+209            android:exported="true" />
+209-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:189:13-36
+210        <activity
+210-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:190:9-192:39
+211            android:name="com.lteitservices.tinytotsstate.students.StudentReportCard_ExamList"
+211-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:191:13-95
+212            android:exported="true" />
+212-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:192:13-36
+213        <activity
+213-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:193:9-195:39
+214            android:name="com.lteitservices.tinytotsstate.students.StudentExamSchedule_ExamList"
+214-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:194:13-97
+215            android:exported="true" />
+215-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:195:13-36
+216        <activity
+216-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:196:9-198:39
+217            android:name="com.lteitservices.tinytotsstate.students.StudentExamSchedule"
+217-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:197:13-88
+218            android:exported="true" />
+218-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:198:13-36
+219        <activity
+219-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:199:9-201:39
+220            android:name="com.lteitservices.tinytotsstate.students.StudentVisitorBook"
+220-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:200:13-87
+221            android:exported="true" />
+221-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:201:13-36
+222        <activity
+222-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:202:9-204:39
+223            android:name="com.lteitservices.tinytotsstate.students.StudentHostel"
+223-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:203:13-82
+224            android:exported="true" />
+224-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:204:13-36
+225        <activity
+225-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:205:9-207:39
+226            android:name="com.lteitservices.tinytotsstate.students.StudentLibraryBook"
+226-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:206:13-87
+227            android:exported="true" />
+227-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:207:13-36
+228        <activity
+228-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:208:9-210:39
+229            android:name="com.lteitservices.tinytotsstate.students.StudentClassTimetable"
+229-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:209:13-90
+230            android:exported="true" />
+230-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:210:13-36
+231        <activity
+231-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:211:9-213:39
+232            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabusTimetable"
+232-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:212:13-93
+233            android:exported="true" />
+233-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:213:13-36
+234        <activity
+234-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:214:9-216:39
+235            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabusStatus"
+235-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:215:13-90
+236            android:exported="true" />
+236-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:216:13-36
+237        <activity
+237-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:217:9-219:39
+238            android:name="com.lteitservices.tinytotsstate.students.StudentLibraryBookIssued"
+238-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:218:13-93
+239            android:exported="true" />
+239-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:219:13-36
+240        <activity
+240-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:220:9-222:39
+241            android:name="com.lteitservices.tinytotsstate.students.StudentAppyLeave"
+241-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:221:13-85
+242            android:exported="true" />
+242-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:222:13-36
+243        <activity
+243-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:223:9-225:39
+244            android:name="com.lteitservices.tinytotsstate.students.StudentAddLeave"
+244-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:224:13-84
+245            android:exported="true" />
+245-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:225:13-36
+246        <activity
+246-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:226:9-228:39
+247            android:name="com.lteitservices.tinytotsstate.students.StudentEditLeave"
+247-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:227:13-85
+248            android:exported="true" />
+248-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:228:13-36
+249        <activity
+249-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:229:9-231:39
+250            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabus"
+250-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:230:13-84
+251            android:exported="true" />
+251-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:231:13-36
+252        <activity
+252-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:232:9-234:39
+253            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineQuizResult"
+253-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:233:13-92
+254            android:exported="true" />
+254-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:234:13-36
+255        <activity
+255-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:235:9-237:39
+256            android:name="com.lteitservices.tinytotsstate.students.StudentSyllabuslesson"
+256-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:236:13-90
+257            android:exported="true" />
+257-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:237:13-36
+258        <activity
+258-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:238:9-240:39
+259            android:name="com.lteitservices.tinytotsstate.students.StudentOnlineCourseQuiz"
+259-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:239:13-92
+260            android:exported="true" />
+260-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:240:13-36
+261        <activity
+261-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:241:9-243:39
+262            android:name="com.lteitservices.tinytotsstate.SettingActivity"
+262-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:242:13-75
+263            android:exported="true" />
+263-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:243:13-36
+264        <activity
+264-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:244:9-247:40
+265            android:name="com.lteitservices.tinytotsstate.TakeUrl"
+265-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:245:13-67
+266            android:configChanges="orientation|screenSize"
+266-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:246:13-59
+267            android:exported="false" />
+267-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:247:13-37
+268        <activity
+268-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:248:9-250:39
+269            android:name="com.lteitservices.tinytotsstate.OpenPdf"
+269-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:249:13-67
+270            android:exported="true" />
+270-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:250:13-36
+271        <activity
+271-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:251:9-253:39
+272            android:name="com.lteitservices.tinytotsstate.students.StudentTasks"
+272-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:252:13-81
+273            android:exported="true" />
+273-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:253:13-36
+274        <activity
+274-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:254:9-256:39
+275            android:name="com.lteitservices.tinytotsstate.students.StudentTasksEdit"
+275-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:255:13-85
+276            android:exported="true" />
+276-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:256:13-36
+277        <activity
+277-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:257:9-259:39
+278            android:name="com.lteitservices.tinytotsstate.students.Payment"
+278-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:258:13-76
+279            android:exported="true" />
+279-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:259:13-36
+280        <activity
+280-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:260:9-262:39
+281            android:name="com.lteitservices.tinytotsstate.students.CoursePayment"
+281-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:261:13-82
+282            android:exported="true" />
+282-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:262:13-36
+283        <activity
+283-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:263:9-267:53
+284            android:name="com.lteitservices.tinytotsstate.students.CourseVideoPlay"
+284-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:264:13-84
+285            android:configChanges="orientation|screenSize"
+285-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:265:13-59
+286            android:exported="false"
+286-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:266:13-37
+287            android:screenOrientation="landscape" />
+287-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:267:13-50
+288        <activity
+288-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:268:9-270:40
+289            android:name="com.lteitservices.tinytotsstate.students.LiveClasses"
+289-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:269:13-80
+290            android:exported="false" />
+290-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:270:13-37
+291
+292        <service
+292-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:272:9-278:19
+293            android:name="com.lteitservices.tinytotsstate.utils.MyFirebaseMessagingService"
+293-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:273:13-92
+294            android:exported="true" >
+294-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:274:13-36
+295            <intent-filter>
+295-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:275:13-277:29
+296                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+296-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:276:17-78
+296-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:276:25-75
+297            </intent-filter>
+298        </service>
+299
+300        <provider
+301            android:name="androidx.core.content.FileProvider"
+301-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:281:13-62
+302            android:authorities="com.lteitservices.tinytotsstate.provider"
+302-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:282:13-60
+303            android:exported="false"
+303-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:283:13-37
+304            android:grantUriPermissions="true" >
+304-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:284:13-47
+305            <meta-data
+305-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:285:13-287:58
+306                android:name="android.support.FILE_PROVIDER_PATHS"
+306-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:286:17-67
+307                android:resource="@xml/provider_paths" />
+307-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:287:17-55
+308        </provider>
+309
+310        <receiver
+310-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:29:9-40:20
+311            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+311-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:30:13-78
+312            android:exported="true"
+312-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:31:13-36
+313            android:permission="com.google.android.c2dm.permission.SEND" >
+313-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:32:13-73
+314            <intent-filter>
+314-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:33:13-35:29
+315                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+315-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:34:17-81
+315-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:34:25-78
+316            </intent-filter>
+317
+318            <meta-data
+318-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:37:13-39:40
+319                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+319-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:38:17-92
+320                android:value="true" />
+320-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:39:17-37
+321        </receiver>
+322        <!--
+323             FirebaseMessagingService performs security checks at runtime,
+324             but set to not exported to explicitly avoid allowing another app to call it.
+325        -->
+326        <service
+326-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:46:9-53:19
+327            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+327-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:47:13-82
+328            android:directBootAware="true"
+328-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:48:13-43
+329            android:exported="false" >
+329-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:49:13-37
+330            <intent-filter android:priority="-500" >
+330-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:275:13-277:29
+331                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+331-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:276:17-78
+331-->D:\Clientdata\TinyTots State Website\TTHS STATE CODE\smart_school_android_app_src\app\src\main\AndroidManifest.xml:276:25-75
+332            </intent-filter>
+333        </service>
+334        <service
+334-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:54:9-63:19
+335            android:name="com.google.firebase.components.ComponentDiscoveryService"
+335-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:55:13-84
+336            android:directBootAware="true"
+336-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:32:13-43
+337            android:exported="false" >
+337-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:56:13-37
+338            <meta-data
+338-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:57:13-59:85
+339                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+339-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:58:17-122
+340                android:value="com.google.firebase.components.ComponentRegistrar" />
+340-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:59:17-82
+341            <meta-data
+341-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:60:13-62:85
+342                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+342-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:61:17-119
+343                android:value="com.google.firebase.components.ComponentRegistrar" />
+343-->[com.google.firebase:firebase-messaging:25.0.0] C:\Users\HP\.gradle\caches\transforms-3\6ce8741d23eb7293c4973541f86307bf\transformed\jetified-firebase-messaging-25.0.0\AndroidManifest.xml:62:17-82
+344            <meta-data
+344-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\HP\.gradle\caches\transforms-3\56f1d853e411e81824e10d558d116c0f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+345                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+345-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\HP\.gradle\caches\transforms-3\56f1d853e411e81824e10d558d116c0f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+346                android:value="com.google.firebase.components.ComponentRegistrar" />
+346-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\HP\.gradle\caches\transforms-3\56f1d853e411e81824e10d558d116c0f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+347            <meta-data
+347-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\HP\.gradle\caches\transforms-3\56f1d853e411e81824e10d558d116c0f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+348                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+348-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\HP\.gradle\caches\transforms-3\56f1d853e411e81824e10d558d116c0f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+349                android:value="com.google.firebase.components.ComponentRegistrar" />
+349-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\HP\.gradle\caches\transforms-3\56f1d853e411e81824e10d558d116c0f\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+350            <meta-data
+350-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:35:13-37:85
+351                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+351-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:36:17-109
+352                android:value="com.google.firebase.components.ComponentRegistrar" />
+352-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:37:17-82
+353            <meta-data
+353-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\HP\.gradle\caches\transforms-3\aa6ad33c5c8db47f9a9bae653b2e4f71\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+354                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+354-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\HP\.gradle\caches\transforms-3\aa6ad33c5c8db47f9a9bae653b2e4f71\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+355                android:value="com.google.firebase.components.ComponentRegistrar" />
+355-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\HP\.gradle\caches\transforms-3\aa6ad33c5c8db47f9a9bae653b2e4f71\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+356        </service>
+357
+358        <activity
+358-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HP\.gradle\caches\transforms-3\20324484da833f682f570a8cf650164f\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+359            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+359-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HP\.gradle\caches\transforms-3\20324484da833f682f570a8cf650164f\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+360            android:exported="false"
+360-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HP\.gradle\caches\transforms-3\20324484da833f682f570a8cf650164f\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+361            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+361-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\HP\.gradle\caches\transforms-3\20324484da833f682f570a8cf650164f\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+362
+363        <provider
+363-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:23:9-28:39
+364            android:name="com.google.firebase.provider.FirebaseInitProvider"
+364-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:24:13-77
+365            android:authorities="com.lteitservices.tinytotsstate.firebaseinitprovider"
+365-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:25:13-72
+366            android:directBootAware="true"
+366-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:26:13-43
+367            android:exported="false"
+367-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:27:13-37
+368            android:initOrder="100" />
+368-->[com.google.firebase:firebase-common:22.0.0] C:\Users\HP\.gradle\caches\transforms-3\1948242697859e03c592a0165551efd8\transformed\jetified-firebase-common-22.0.0\AndroidManifest.xml:28:13-36
+369        <provider
+369-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\78e500995c79d0545ab48a0c67b783f6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+370            android:name="androidx.startup.InitializationProvider"
+370-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\78e500995c79d0545ab48a0c67b783f6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+371            android:authorities="com.lteitservices.tinytotsstate.androidx-startup"
+371-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\78e500995c79d0545ab48a0c67b783f6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+372            android:exported="false" >
+372-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\78e500995c79d0545ab48a0c67b783f6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+373            <meta-data
+373-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\78e500995c79d0545ab48a0c67b783f6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+374                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+374-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\78e500995c79d0545ab48a0c67b783f6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+375                android:value="androidx.startup" />
+375-->[androidx.emoji2:emoji2:1.3.0] C:\Users\HP\.gradle\caches\transforms-3\78e500995c79d0545ab48a0c67b783f6\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+376            <meta-data
+376-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\HP\.gradle\caches\transforms-3\b1b2314024878a9179306e8a2181417b\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+377                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+377-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\HP\.gradle\caches\transforms-3\b1b2314024878a9179306e8a2181417b\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+378                android:value="androidx.startup" />
+378-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\HP\.gradle\caches\transforms-3\b1b2314024878a9179306e8a2181417b\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+379            <meta-data
+379-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+380                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+380-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+381                android:value="androidx.startup" />
+381-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+382        </provider>
+383
+384        <meta-data
+384-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HP\.gradle\caches\transforms-3\5012c272fc404a28c38e8c2058f21b45\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+385            android:name="com.google.android.gms.version"
+385-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HP\.gradle\caches\transforms-3\5012c272fc404a28c38e8c2058f21b45\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+386            android:value="@integer/google_play_services_version" />
+386-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\HP\.gradle\caches\transforms-3\5012c272fc404a28c38e8c2058f21b45\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+387
+388        <receiver
+388-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+389            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+389-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+390            android:directBootAware="false"
+390-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+391            android:enabled="true"
+391-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+392            android:exported="true"
+392-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+393            android:permission="android.permission.DUMP" >
+393-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+394            <intent-filter>
+394-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+395                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+395-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+395-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+396            </intent-filter>
+397            <intent-filter>
+397-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+398                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+398-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+398-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+399            </intent-filter>
+400            <intent-filter>
+400-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+401                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+401-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+401-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+402            </intent-filter>
+403            <intent-filter>
+403-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+404                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+404-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+404-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\HP\.gradle\caches\transforms-3\5eb21facb538f9578367fd03a9eba060\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+405            </intent-filter>
+406        </receiver>
+407
+408        <service
+408-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\dbeaf1c183bd441adbf2fd4e6c4a4199\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+409            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+409-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\dbeaf1c183bd441adbf2fd4e6c4a4199\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+410            android:exported="false" >
+410-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\dbeaf1c183bd441adbf2fd4e6c4a4199\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+411            <meta-data
+411-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\dbeaf1c183bd441adbf2fd4e6c4a4199\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+412                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+412-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\dbeaf1c183bd441adbf2fd4e6c4a4199\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+413                android:value="cct" />
+413-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\dbeaf1c183bd441adbf2fd4e6c4a4199\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+414        </service>
+415        <service
+415-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\2a62f734268f2cee1ad220386a41c4d7\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+416            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+416-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\2a62f734268f2cee1ad220386a41c4d7\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+417            android:exported="false"
+417-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\2a62f734268f2cee1ad220386a41c4d7\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+418            android:permission="android.permission.BIND_JOB_SERVICE" >
+418-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\2a62f734268f2cee1ad220386a41c4d7\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+419        </service>
+420
+421        <receiver
+421-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\2a62f734268f2cee1ad220386a41c4d7\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+422            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+422-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\2a62f734268f2cee1ad220386a41c4d7\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+423            android:exported="false" />
+423-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\HP\.gradle\caches\transforms-3\2a62f734268f2cee1ad220386a41c4d7\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+424    </application>
+425
+426</manifest>
