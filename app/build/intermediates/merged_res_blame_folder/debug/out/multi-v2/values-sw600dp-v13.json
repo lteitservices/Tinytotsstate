@@ -4,7 +4,7 @@
             "outputFile": "com.lteitservices.tinytotsstate.app-mergeDebugResources-40:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\730de889fa7eff79a2c6425f6cb4aee5\\transformed\\appcompat-1.7.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/Users/abhishek/.gradle/caches/transforms-3/730de889fa7eff79a2c6425f6cb4aee5/transformed/appcompat-1.7.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\231f09c87f9b324d2229d825ba22ba04\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/Users/abhishek/.gradle/caches/transforms-3/231f09c87f9b324d2229d825ba22ba04/transformed/material-1.12.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

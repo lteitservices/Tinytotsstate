@@ -4,7 +4,7 @@
             "outputFile": "com.lteitservices.tinytotsstate.app-mergeDebugResources-40:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\730de889fa7eff79a2c6425f6cb4aee5\\transformed\\appcompat-1.7.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "/Users/abhishek/.gradle/caches/transforms-3/730de889fa7eff79a2c6425f6cb4aee5/transformed/appcompat-1.7.1/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\ff9e9ac6302c13460ad766846437d12d\\transformed\\core-1.13.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "/Users/abhishek/.gradle/caches/transforms-3/ff9e9ac6302c13460ad766846437d12d/transformed/core-1.13.0/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

@@ -24,7 +24,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.lteitservices.tinytotsstate.BaseActivity;
 import com.lteitservices.tinytotsstate.Login;
 import com.lteitservices.tinytotsstate.R;
@@ -78,8 +78,15 @@ public class StudentProcessingFees extends BaseActivity {
         mDrawerLayout.addView(contentView, 0);
 
         titleTV.setText(getApplicationContext().getString(R.string.processingfees));
-        device_token = FirebaseInstanceId.getInstance().getToken()+"";
-        Log.e(" logout DEVICE TOKEN", device_token);
+        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task ->{
+            if (!task.isSuccessful()) {
+                Log.w("TokenRetrieval", "Fetching FCM registration token failed", task.getException());
+                return;
+            }
+
+            device_token = task.getResult();
+            Log.e(" logout DEVICE TOKEN", device_token);
+        });
        // makeText(this, Utility.getSharedPreferences(getApplicationContext(),Constants.currency), Toast.LENGTH_SHORT).show();
         feesList = (RecyclerView) findViewById(R.id.studentFees_listview);
         card_view_outer = findViewById(R.id.card_view_outer);

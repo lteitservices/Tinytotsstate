@@ -37,14 +37,13 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.firebase.iid.InstanceIdResult;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.lteitservices.tinytotsstate.adapters.LoginChildListAdapter;
 import com.lteitservices.tinytotsstate.students.NewDashboard;
 import com.lteitservices.tinytotsstate.students.StudentFees;
 import com.lteitservices.tinytotsstate.utils.Constants;
 import com.lteitservices.tinytotsstate.utils.MyApp;
 import com.lteitservices.tinytotsstate.utils.Utility;
-import com.google.firebase.iid.FirebaseInstanceId;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
@@ -84,13 +83,15 @@ public class Login extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.login_activity);
-        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener( Login.this,  new OnSuccessListener<InstanceIdResult>() {
-            @Override
-            public void onSuccess(InstanceIdResult instanceIdResult) {
-                device_token = FirebaseInstanceId.getInstance().getToken()+"";
-                Log.e("DEVICE TOKEN",device_token);
-                System.out.println("DEVICE TOKEN="+device_token);
+        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task ->{
+            if (!task.isSuccessful()) {
+                Log.w("TokenRetrieval", "Fetching FCM registration token failed", task.getException());
+                return;
             }
+
+            String token = task.getResult();
+            Log.d("Login", "DEVICE TOKEN: " + token);
+            System.out.println("DEVICE TOKEN: " + token);
         });
         tv_forgotPass = (TextView)findViewById(R.id.tv_passwordReset_login);
         btn_login = (LinearLayout)findViewById(R.id.btn_login);

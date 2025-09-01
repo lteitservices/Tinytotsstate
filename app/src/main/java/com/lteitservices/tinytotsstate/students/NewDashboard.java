@@ -45,7 +45,7 @@ import com.android.volley.toolbox.Volley;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.lteitservices.tinytotsstate.AboutSchool;
 import com.lteitservices.tinytotsstate.Login;
 import com.lteitservices.tinytotsstate.R;
@@ -91,16 +91,16 @@ public class NewDashboard extends AppCompatActivity {
     LoginChildListAdapter studentListAdapter;
     public float offset;
     ImageView actionBarLogo;
-    TextView unread_count,version_name;
-    public Map<String, String> params = new Hashtable<String, String>();
-    public Map<String, String> aparams = new Hashtable<String, String>();
+    TextView unread_count;
+    public Map<String, String> params = new Hashtable<>();
+    public Map<String, String> aparams = new Hashtable<>();
     FrameLayout notification_alert;
     private TextView classTV, nameTV, childDetailsTV;
     private ImageView profileImageIV;
     private LinearLayout switchChildBtn;
     private RelativeLayout drawerHead;
-    public Map<String, String> logoutparams = new Hashtable<String, String>();
-    public Map<String, String> headers = new HashMap<String, String>();
+    public Map<String, String> logoutparams = new Hashtable<>();
+    public Map<String, String> headers = new HashMap<>();
     String device_token;
     ArrayList<String> childIdList = new ArrayList<String>();
     ArrayList<String> childNameList = new ArrayList<String>();
@@ -109,7 +109,7 @@ public class NewDashboard extends AppCompatActivity {
     JSONArray modulesJson;
     TextView name,admissionno,classdata;
     ImageView profileImageview;
-    ArrayList<String> moduleCodeList = new ArrayList<String>();
+    ArrayList<String> moduleCodeList = new ArrayList<>();
     ArrayList<String> moduleStatusList = new ArrayList<String>();
     LinearLayout profilelinear;
     CollapsingToolbarLayout collapsing_toolbar;
@@ -177,8 +177,15 @@ public class NewDashboard extends AppCompatActivity {
         decorate();
         setUpPermission();
 
-        device_token = FirebaseInstanceId.getInstance().getToken()+"";
-        Log.e(" logout DEVICE TOKEN", device_token);
+        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task ->{
+            if (!task.isSuccessful()) {
+                Log.w("TokenRetrieval", "Fetching FCM registration token failed", task.getException());
+                return;
+            }
+
+            device_token = task.getResult();
+            Log.e(" logout DEVICE TOKEN", device_token);
+        });
         DatabaseHelper db = new DatabaseHelper(NewDashboard.this);
         int profile_counts = db.getProfilesCount();
         db.close();

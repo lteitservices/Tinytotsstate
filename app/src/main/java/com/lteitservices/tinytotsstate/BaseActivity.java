@@ -23,7 +23,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.lteitservices.tinytotsstate.utils.Constants;
 import com.lteitservices.tinytotsstate.utils.Utility;
 import org.json.JSONException;
@@ -73,8 +73,15 @@ public class BaseActivity extends AppCompatActivity {
             }
         });
 
-        device_token = FirebaseInstanceId.getInstance().getToken()+"";
-        Log.e(" logout DEVICE TOKEN", device_token);
+        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task ->{
+            if (!task.isSuccessful()) {
+                Log.w("TokenRetrieval", "Fetching FCM registration token failed", task.getException());
+                return;
+            }
+
+            device_token = task.getResult();
+            Log.e(" logout DEVICE TOKEN", device_token);
+        });
 
     }
 
