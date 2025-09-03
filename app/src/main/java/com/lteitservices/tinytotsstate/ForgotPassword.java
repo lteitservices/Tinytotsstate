@@ -1,11 +1,9 @@
 package com.lteitservices.tinytotsstate;
 
 import android.app.ProgressDialog;
-import android.os.Build;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
@@ -41,69 +39,58 @@ public class ForgotPassword extends AppCompatActivity {
     LinearLayout submitBtn;
     TextView rb_Student, rb_Present;
     String loginType = "";
-    public Map<String, String> params = new Hashtable<String, String>();
-    public Map<String, String>  headers = new HashMap<String, String>();
+    public Map<String, String> params = new Hashtable<>();
+    public Map<String, String>  headers = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.forgot_password_activity);
 
-        submitBtn = (LinearLayout)findViewById(R.id.btn_submit_fp);
-        emailET = (EditText)findViewById(R.id.et_email_fp);
+        submitBtn = findViewById(R.id.btn_submit_fp);
+        emailET = findViewById(R.id.et_email_fp);
 
-        rb_Student = (TextView)findViewById(R.id.rb_Student_fp);
-        rb_Present = (TextView)findViewById(R.id.rb_Parent_fp);
+        rb_Student = findViewById(R.id.rb_Student_fp);
+        rb_Present = findViewById(R.id.rb_Parent_fp);
         logoIV = findViewById(R.id.fp_logo);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(getResources().getColor(R.color.textHeading));
-        }
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(getResources().getColor(R.color.textHeading));
         String appLogo = Utility.getSharedPreferences(this, Constants.appLogo)+"?"+new Random().nextInt(11);
         Log.e("appLogo", appLogo);
-        Picasso.with(getApplicationContext()).load(appLogo).into(logoIV);
+        Picasso.with(this).load(appLogo).into(logoIV);
 
-        rb_Student.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                rb_Student.setBackgroundResource(R.drawable.green_border);
-                rb_Present.setBackgroundResource(R.drawable.grey_button);
-                loginType="Student";
-            }
+        rb_Student.setOnClickListener(view -> {
+            rb_Student.setBackgroundResource(R.drawable.green_border);
+            rb_Present.setBackgroundResource(R.drawable.grey_button);
+            loginType="Student";
         });
-        rb_Present.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                rb_Present.setBackgroundResource(R.drawable.green_border);
-                rb_Student.setBackgroundResource(R.drawable.grey_button);
-                loginType="Parent";
-            }
+        rb_Present.setOnClickListener(view -> {
+            rb_Present.setBackgroundResource(R.drawable.green_border);
+            rb_Student.setBackgroundResource(R.drawable.grey_button);
+            loginType="Parent";
         });
 
-        submitBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String emailId = emailET.getText().toString().trim();
+        submitBtn.setOnClickListener(v -> {
+            String emailId = emailET.getText().toString().trim();
 
-                if (emailId.length() == 0) {
-                    makeText(getApplicationContext(),getApplicationContext().getString(R.string.validateregisterid), Toast.LENGTH_SHORT).show();
-                } else if (loginType.equals("")) {
-                    makeText(getApplicationContext(), getApplicationContext().getString(R.string.validatelogintype), Toast.LENGTH_SHORT).show();
+            if (emailId.isEmpty()) {
+                makeText(getApplicationContext(),getApplicationContext().getString(R.string.validateregisterid), Toast.LENGTH_SHORT).show();
+            } else if (loginType.isEmpty()) {
+                makeText(getApplicationContext(), getApplicationContext().getString(R.string.validatelogintype), Toast.LENGTH_SHORT).show();
+            } else {
+                if (Utility.isConnectingToInternet(ForgotPassword.this)) {
+                    params.put("email", emailId);
+                    params.put("usertype", loginType.toLowerCase());
+                    params.put("site_url", Utility.getSharedPreferences(getApplicationContext(), Constants.imagesUrl));
+                    JSONObject obj=new JSONObject(params);
+                    Log.e("params ", obj.toString());
+                    System.out.println("params== "+ obj);
+                    getDataFromApi(obj.toString());
+
                 } else {
-                    if (Utility.isConnectingToInternet(ForgotPassword.this)) {
-                        params.put("email", emailId);
-                        params.put("usertype", loginType.toLowerCase());
-                        params.put("site_url", Utility.getSharedPreferences(getApplicationContext(), Constants.imagesUrl));
-                        JSONObject obj=new JSONObject(params);
-                        Log.e("params ", obj.toString());
-                        System.out.println("params== "+ obj.toString());
-                        getDataFromApi(obj.toString());
-
-                    } else {
-                        makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
-                    }
+                    makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
                 }
             }
         });
