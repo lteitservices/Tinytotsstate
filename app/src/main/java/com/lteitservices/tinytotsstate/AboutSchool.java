@@ -26,6 +26,8 @@ import java.util.Map;
 
 import static android.widget.Toast.makeText;
 
+import androidx.core.view.WindowCompat;
+
 public class AboutSchool extends BaseActivity {
 
     private TextView nameTV, addressTV, emailTV, phoneTV, schoolCodeTV, currentSessionTV, sessionStartMonthTV;
@@ -89,7 +91,7 @@ public class AboutSchool extends BaseActivity {
                         logo += "uploads/school_content/logo/app_logo/";
                         logo += data.getString("app_logo");
 
-                        Picasso.with(getApplicationContext()).load(logo).fit().centerInside().into(schoolLogoIV);
+                        Picasso.get().load(logo).fit().centerInside().into(schoolLogoIV);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

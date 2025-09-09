@@ -2,6 +2,8 @@ package com.lteitservices.tinytotsstate;
 
 import android.app.ProgressDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
@@ -59,7 +61,8 @@ public class ForgotPassword extends AppCompatActivity {
         window.setStatusBarColor(getResources().getColor(R.color.textHeading));
         String appLogo = Utility.getSharedPreferences(this, Constants.appLogo)+"?"+new Random().nextInt(11);
         Log.e("appLogo", appLogo);
-        Picasso.with(this).load(appLogo).into(logoIV);
+//        Picasso.with(this).load(appLogo).into(logoIV);
+        Picasso.get().load(appLogo).into(logoIV);
 
         rb_Student.setOnClickListener(view -> {
             rb_Student.setBackgroundResource(R.drawable.green_border);

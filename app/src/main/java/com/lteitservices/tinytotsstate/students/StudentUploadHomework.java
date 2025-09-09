@@ -29,6 +29,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.WindowCompat;
+
 import com.google.android.material.textfield.TextInputEditText;
 import com.lteitservices.tinytotsstate.R;
 import com.lteitservices.tinytotsstate.utils.Constants;
@@ -86,6 +88,7 @@ public class StudentUploadHomework extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         setContentView(R.layout.upload_homework_new);
         backBtn = findViewById(R.id.actionBar_backBtn);
         // mDrawerLayout = findViewById(R.id.container);

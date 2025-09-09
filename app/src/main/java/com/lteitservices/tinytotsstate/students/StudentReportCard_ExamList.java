@@ -2,6 +2,8 @@ package com.lteitservices.tinytotsstate.students;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
+
+import androidx.core.view.WindowCompat;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -48,6 +50,7 @@ public class StudentReportCard_ExamList extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.student_report_card_exam_list_activity, null, false);
         mDrawerLayout.addView(contentView, 0);

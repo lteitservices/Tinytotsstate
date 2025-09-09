@@ -25,6 +25,8 @@ import com.lteitservices.tinytotsstate.R;
 import com.lteitservices.tinytotsstate.utils.Utility;
 import static android.widget.Toast.makeText;
 
+import androidx.core.view.WindowCompat;
+
 public class StudentVideoTutorialPlay extends BaseActivity {
 
     RelativeLayout image_layout,youtube_layout;
@@ -35,6 +37,7 @@ public class StudentVideoTutorialPlay extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.activity_student_video_tutorial_play, null, false);
         mDrawerLayout.addView(contentView, 0);

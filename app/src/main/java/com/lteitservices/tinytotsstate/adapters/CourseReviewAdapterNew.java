@@ -52,7 +52,7 @@ public class CourseReviewAdapterNew extends RecyclerView.Adapter<CourseReviewAda
         holder.review.setText(reviewList.get(position));
         holder.rating.setRating(Float.parseFloat(ratingList.get(position)));
         String imgUrl = Utility.getSharedPreferences(context.getApplicationContext(), "imagesUrl")+imageList.get(position);
-        Picasso.with(context).load(imgUrl).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
+        Picasso.get().load(imgUrl).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
                 .networkPolicy(NetworkPolicy.NO_CACHE).into(holder.createdimage);
     }
 

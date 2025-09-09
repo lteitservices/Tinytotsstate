@@ -1,6 +1,7 @@
 package com.lteitservices.tinytotsstate.students;
 
 import androidx.cardview.widget.CardView;
+import androidx.core.view.WindowCompat;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -103,6 +104,7 @@ public class StudentCourseDetail  extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         Utility.setLocale(getApplicationContext(), Utility.getSharedPreferences(getApplicationContext(), Constants.langCode));
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.activity_student_course_detail, null, false);
@@ -827,7 +829,7 @@ public class StudentCourseDetail  extends BaseActivity {
                         System.out.println("courselearn stringList=="+stringList);
 
                         String teacher_img = Utility.getSharedPreferences(getApplicationContext(), "imagesUrl")+"uploads/staff_images/"+dataArray.getString("image");
-                        Picasso.with(getApplicationContext()).load(teacher_img).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
+                        Picasso.get().load(teacher_img).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
                                 .networkPolicy(NetworkPolicy.NO_CACHE).into(teacher_ImageIV);
 
                         final String course_url=dataArray.getString("course_url");

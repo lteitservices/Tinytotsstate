@@ -199,19 +199,20 @@ public class StudentParentsDetailNew extends Fragment implements SwipeRefreshLay
                         System.out.println("Mother Image"+mother_Image);
                         System.out.println("Guardian Image"+ guardian_Image);
                         if(dataArray.getString("guardian_relation").equals("Father")){
-                            Picasso.with(getActivity()).load(guardian_Image).placeholder(R.drawable.default_image).memoryPolicy(MemoryPolicy.NO_CACHE)
+                            Picasso.get().load(guardian_Image).placeholder(R.drawable.default_image).memoryPolicy(MemoryPolicy.NO_CACHE)
                                     .networkPolicy(NetworkPolicy.NO_CACHE).into(guardianImage);
                         }else if(dataArray.getString("guardian_relation").equals("Mother")){
-                            Picasso.with(getActivity()).load(guardian_Image).placeholder(R.drawable.default_female).memoryPolicy(MemoryPolicy.NO_CACHE)
+                            Picasso.get().load(guardian_Image).placeholder(R.drawable.default_female).memoryPolicy(MemoryPolicy.NO_CACHE)
                                     .networkPolicy(NetworkPolicy.NO_CACHE).into(guardianImage);
                         }else{
-                            Picasso.with(getActivity()).load(guardian_Image).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
+                            Picasso.get().load(guardian_Image).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
                                     .networkPolicy(NetworkPolicy.NO_CACHE).into(guardianImage);
                         }
 
-                        Picasso.with(getActivity()).load(father_Image).placeholder(R.drawable.default_image).memoryPolicy(MemoryPolicy.NO_CACHE)
+// Separate lines for father and mother images
+                        Picasso.get().load(father_Image).placeholder(R.drawable.default_image).memoryPolicy(MemoryPolicy.NO_CACHE)
                                 .networkPolicy(NetworkPolicy.NO_CACHE).into(fatherImage);
-                        Picasso.with(getActivity()).load(mother_Image).placeholder(R.drawable.default_female).memoryPolicy(MemoryPolicy.NO_CACHE)
+                        Picasso.get().load(mother_Image).placeholder(R.drawable.default_female).memoryPolicy(MemoryPolicy.NO_CACHE)
                                 .networkPolicy(NetworkPolicy.NO_CACHE).into(motherImage);
 
 

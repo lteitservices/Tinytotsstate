@@ -19,6 +19,8 @@ import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
+
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -113,6 +115,7 @@ public class StudentAddLeave extends AppCompatActivity implements DatePickerDial
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         setContentView(R.layout.add_leave);
         backBtn = findViewById(R.id.actionBar_backBtn);
         mDrawerLayout = findViewById(R.id.container);

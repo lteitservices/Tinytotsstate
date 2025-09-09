@@ -8,7 +8,7 @@ public class Constants {
     public static final String appKey = "schoolAdmin@1234";
     public static final String contentType = "application/json";
     public static final String contentTypes = "application/x-www-form-urlencoded";
-    public static final String domain = "";
+    public static String domain = "";
     public static final String loginUrl = "auth/login";
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";

@@ -22,6 +22,8 @@ import com.lteitservices.tinytotsstate.utils.Utility;
 import com.lteitservices.tinytotsstate.R;
 import static android.widget.Toast.makeText;
 
+import androidx.core.view.WindowCompat;
+
 
 public class Payment extends BaseActivity {
     WebView webView;
@@ -31,6 +33,7 @@ public class Payment extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.payment_activity, null, false);
         mDrawerLayout.addView(contentView, 0);

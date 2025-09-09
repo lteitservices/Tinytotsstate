@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.WindowCompat;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -53,7 +54,7 @@ public class StudentTransportRoutes extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.student_transport_routes_activity, null, false);
         mDrawerLayout.addView(contentView, 0);
@@ -111,10 +112,10 @@ public class StudentTransportRoutes extends BaseActivity {
                        vehicleNo.setText( dataArray.getString("vehicle_no"));
                        if(!dataArray.getString("vehicle_photo").equals("")) {
                            String bimgUrl = Utility.getSharedPreferences(getApplicationContext(), "imagesUrl") + "uploads/vehicle_photo/" + dataArray.getString("vehicle_photo");
-                           Picasso.with(getApplicationContext()).load(bimgUrl).into(vehiclePhoto);
+                           Picasso.get().load(bimgUrl).into(vehiclePhoto);
                            System.out.println("vehicle photo=" + bimgUrl);
                        }else{
-                           Picasso.with(getApplicationContext()).load(R.drawable.transport_page).into(vehiclePhoto);
+                           Picasso.get().load(R.drawable.transport_page).into(vehiclePhoto);
                        }
                        driverName.setText( dataArray.getString("driver_name"));
                        driverContact.setText( dataArray.getString("driver_contact"));

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Toast;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.WindowCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -57,6 +58,7 @@ public class StudentTasksEdit extends BaseActivity   {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.edit_task_dialog, null, false);
         mDrawerLayout.addView(contentView, 0);

@@ -59,7 +59,7 @@ public class LoginChildListAdapter extends RecyclerView.Adapter<LoginChildListAd
         holder.childClassTV.setText(childClassList.get(position));
         String imgUrl = Utility.getSharedPreferences(context, Constants.imagesUrl) + childImageList.get(position);
         Log.e("child image adap", imgUrl);
-        Picasso.with(context).load(imgUrl).placeholder(R.drawable.placeholder_user).into(holder.childImageIV);
+        Picasso.get().load(imgUrl).placeholder(R.drawable.placeholder_user).into(holder.childImageIV);
         holder.viewContainer.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {

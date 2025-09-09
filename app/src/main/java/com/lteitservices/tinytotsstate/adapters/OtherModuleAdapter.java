@@ -159,7 +159,7 @@ public class OtherModuleAdapter extends RecyclerView.Adapter<OtherModuleAdapter.
             holder.layout.setVisibility(View.VISIBLE);
             holder.view.setVisibility(View.GONE);
         }
-         Picasso.with(context).load(album.getThumbnail()).fit().centerInside().placeholder(null).into(holder.moduleiamge);
+         Picasso.get().load(album.getThumbnail()).fit().centerInside().placeholder(null).into(holder.moduleiamge);
          holder.layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

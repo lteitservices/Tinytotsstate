@@ -30,6 +30,8 @@ import java.util.Hashtable;
 import java.util.Map;
 import static android.widget.Toast.makeText;
 
+import androidx.core.view.WindowCompat;
+
 public class StudentSyllabuslesson extends BaseActivity {
 
     ListView lessonList;
@@ -45,7 +47,7 @@ public class StudentSyllabuslesson extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.activity_student_syllabus_lesson, null, false);
         mDrawerLayout.addView(contentView, 0);

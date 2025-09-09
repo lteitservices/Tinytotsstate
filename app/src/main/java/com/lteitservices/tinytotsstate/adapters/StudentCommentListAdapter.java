@@ -86,7 +86,7 @@ public class StudentCommentListAdapter extends RecyclerView.Adapter<StudentComme
        holder.comment.setText(messagelist.get(position));
 
        String imgUrl = student_imagelist.get(position);
-       Picasso.with(context).load(imgUrl).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
+       Picasso.get().load(imgUrl).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
                 .networkPolicy(NetworkPolicy.NO_CACHE).into(holder.createdimage);
        System.out.println("imgUrl=="+imgUrl);
        holder.delete.setTextColor(Color.parseColor(Utility.getSharedPreferences(context.getApplicationContext(), Constants.primaryColour)));

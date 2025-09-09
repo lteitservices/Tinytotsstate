@@ -5,6 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+
+import androidx.core.view.WindowCompat;
+
 import com.lteitservices.tinytotsstate.BaseActivity;
 import com.lteitservices.tinytotsstate.NotificationModel;
 import com.lteitservices.tinytotsstate.adapters.NotificationViewAdapter;
@@ -19,6 +22,7 @@ public class NotificationList extends BaseActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.activity_notification_list, null, false);
         mDrawerLayout.addView(contentView, 0);

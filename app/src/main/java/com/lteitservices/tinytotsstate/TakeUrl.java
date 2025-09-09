@@ -34,6 +34,8 @@ import java.util.Locale;
 import java.util.Map;
 import static android.widget.Toast.makeText;
 
+import androidx.core.view.WindowCompat;
+
 public class TakeUrl extends Activity {
     EditText urlET;
     LinearLayout submitBtn;

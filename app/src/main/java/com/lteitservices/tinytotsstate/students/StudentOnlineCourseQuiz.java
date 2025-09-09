@@ -27,6 +27,7 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.view.WindowCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.android.volley.AuthFailureError;
@@ -116,6 +117,7 @@ public class StudentOnlineCourseQuiz extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         setContentView(R.layout.quiz_layout);
         quiz_id = getIntent().getExtras().getString("quiz_id");
         quiz_name = getIntent().getExtras().getString("quiz_name");
@@ -457,7 +459,7 @@ public class StudentOnlineCourseQuiz extends AppCompatActivity {
 
     private void decorate() {
         String appLogo = Utility.getSharedPreferences(this, Constants.appLogo)+"?"+new Random().nextInt(11);
-        Picasso.with(getApplicationContext()).load(appLogo).fit().centerInside().placeholder(null).into(profileImageview);
+        Picasso.get().load(appLogo).fit().centerInside().placeholder(null).into(profileImageview);
         // Picasso.with(getApplicationContext()).load(Utility.getSharedPreferences(this, "userImage")).placeholder(R.drawable.placeholder_user).into(profileImageview);
         linear.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.primaryColour)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

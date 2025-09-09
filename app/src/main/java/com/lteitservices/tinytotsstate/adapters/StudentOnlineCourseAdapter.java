@@ -297,7 +297,7 @@ public class StudentOnlineCourseAdapter extends RecyclerView.Adapter<StudentOnli
         }
 
         String imgUrl = Utility.getSharedPreferences(context.getApplicationContext(), "imagesUrl")+"uploads/staff_images/"+imagelist.get(position);
-        Picasso.with(context).load(imgUrl).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
+        Picasso.get().load(imgUrl).placeholder(R.drawable.placeholder_user).memoryPolicy(MemoryPolicy.NO_CACHE)
                 .networkPolicy(NetworkPolicy.NO_CACHE).into(holder.course_createdimage);
 
 

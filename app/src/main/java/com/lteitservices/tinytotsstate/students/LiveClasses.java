@@ -17,6 +17,9 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
+
+import androidx.core.view.WindowCompat;
+
 import com.lteitservices.tinytotsstate.BaseActivity;
 import com.lteitservices.tinytotsstate.R;
 
@@ -26,6 +29,7 @@ public class LiveClasses extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.liveclasses_activity, null, false);
         mDrawerLayout.addView(contentView, 0);

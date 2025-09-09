@@ -177,7 +177,7 @@ public class AcademicModuleAdapter extends RecyclerView.Adapter<AcademicModuleAd
             holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             holder.itemView.setVisibility(View.VISIBLE);
         }
-         Picasso.with(context).load(album.getThumbnail()).fit().centerInside().placeholder(null).into(holder.moduleiamge);
+         Picasso.get().load(album.getThumbnail()).fit().centerInside().placeholder(null).into(holder.moduleiamge);
          holder.layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

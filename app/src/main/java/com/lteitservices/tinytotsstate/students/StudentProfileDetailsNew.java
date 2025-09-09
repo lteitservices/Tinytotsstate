@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.WindowCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -66,6 +67,7 @@ public class StudentProfileDetailsNew extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         View contentView = inflater.inflate(R.layout.student_profile_activity, null, false);
         mDrawerLayout.addView(contentView, 0);
@@ -138,8 +140,8 @@ public class StudentProfileDetailsNew extends BaseActivity {
                             }
                             String bimgUrl = Utility.getSharedPreferences(getApplicationContext(), "imagesUrl") + dataArray.getString("barcode");
                             String qrimgUrl = Utility.getSharedPreferences(getApplicationContext(), "imagesUrl") + dataArray.getString("qrcode");
-                            Picasso.with(getApplicationContext()).load(bimgUrl).into(barcodeIV);
-                            Picasso.with(getApplicationContext()).load(qrimgUrl).into(qrcodeIV);
+                            Picasso.get().load(bimgUrl).into(barcodeIV);
+                            Picasso.get().load(qrimgUrl).into(qrcodeIV);
                               qrcodeIV.setOnClickListener(new View.OnClickListener() {
                                   @Override
                                   public void onClick(View view) {
@@ -156,7 +158,7 @@ public class StudentProfileDetailsNew extends BaseActivity {
                             classTV.setText(dataArray.getString("class") + " - " + dataArray.getString("section")+" ("+dataArray.getString("session")+")");
 
                             String imgUrl = Utility.getSharedPreferences(getApplicationContext(), "imagesUrl") + dataArray.getString("image");
-                            Picasso.with(getApplicationContext()).load(imgUrl).placeholder(R.drawable.placeholder_user).into(profileIV);
+                            Picasso.get().load(imgUrl).placeholder(R.drawable.placeholder_user).into(profileIV);
 
                         JSONObject fieldsArray = object.getJSONObject("student_fields");
 
@@ -231,7 +233,7 @@ public class StudentProfileDetailsNew extends BaseActivity {
         nameTV.setText(name);
         ImageView qrcode_image = (ImageView) dialog.findViewById(R.id.qrcode_image);
         ImageView crossIcon = (ImageView) dialog.findViewById(R.id.crossIcon);
-        Picasso.with(getApplicationContext()).load(url).into(qrcode_image);
+        Picasso.get().load(url).into(qrcode_image);
         crossIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

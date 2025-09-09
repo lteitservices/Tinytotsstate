@@ -86,9 +86,9 @@ public class StudentProfileParentFragment extends Fragment {
         Log.e("Mother Image", motherImage);
         Log.e("Guardian Image", guardianImage);
 
-        Picasso.with(getActivity()).load(fatherImage).placeholder(R.drawable.placeholder_user).into(fatherIV);
-        Picasso.with(getActivity()).load(motherImage).placeholder(R.drawable.placeholder_user).into(motherIV);
-        Picasso.with(getActivity()).load(guardianImage).placeholder(R.drawable.placeholder_user).into(guardianIV);
+        Picasso.get().load(fatherImage).placeholder(R.drawable.placeholder_user).into(fatherIV);
+        Picasso.get().load(motherImage).placeholder(R.drawable.placeholder_user).into(motherIV);
+        Picasso.get().load(guardianImage).placeholder(R.drawable.placeholder_user).into(guardianIV);
         return mainView;
     }
 }
